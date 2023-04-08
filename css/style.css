@@ -1,130 +1,261 @@
-header {
-    position: absolute;
-    width: 100%;
-    height: 120px;
-    background: #00274C;
-    color: #FFCB05;
-    text-align: center;
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-h1 {
-    padding: 20px 10px;
-    font-size: 22px;
+body {
+  font-family: 'Inter';
 }
 
-.all {
-    padding: 10px;
-    position: absolute;
-    width: 335px;
-    height: auto;
-    left: 29px;
-    top: 175px;
-    font-size: 20px;
-    position: absolute;
-    color: #F06F5E;
-    border-color: transparent;
-    background: linear-gradient(122.06deg, rgba(255, 255, 255, 0.051) -10.44%, rgba(255, 255, 255, 0.1) 32.27%, rgba(255, 255, 255, 0) 34.06%), rgba(240, 111, 94, 0.3);
-    box-shadow: 0px 3px 4px rgba(240, 111, 94, 0.2), inset 0px -0.4px 0.236028px rgba(240, 111, 94, 0.2), inset 0px -0.5px 0.590071px rgba(255, 255, 255, 0.3), inset 0px -1px 0px rgba(240, 111, 94, 0.3), inset 0px 1px 0px #F06F5E;
-    backdrop-filter: blur(1.72839px);
-    border-radius: 12px;
+nav {
+  background-color: #00274C;
+
 }
 
-.blue {
-    padding: 10px;
-    position: absolute;
-    width: 335px;
-    height: auto;
-    left: 29px;
-    top: 275px;
-    font-size: 20px;
-    position: absolute;
-    color: #3878FF;
-    border-color: transparent;
-
-    background: linear-gradient(122.06deg, rgba(255, 255, 255, 0.051) -10.44%, rgba(255, 255, 255, 0.1) 32.27%, rgba(255, 255, 255, 0) 34.06%), rgba(56, 120, 255, 0.3);
-    box-shadow: 0px 3px 4px rgba(56, 120, 255, 0.2), inset 0px -0.4px 0.236028px rgba(56, 120, 255, 0.2), inset 0px -0.5px 0.590071px rgba(255, 255, 255, 0.3), inset 0px -1px 0px rgba(56, 120, 255, 0.3), inset 0px 1px 0px #3878FF;
-    backdrop-filter: blur(1.72839px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 12px;
+.navbar-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 10px 14px;
+  gap: 6px;
 }
 
-.orange {
-    padding: 10px;
-    position: absolute;
-    width: 335px;
-    height: auto;
-    left: 29px;
-    top: 375px;
-    font-size: 20px;
-    position: absolute;
-    color: #FF9720;
-    border-color: transparent;
-
-    background: linear-gradient(122.06deg, rgba(255, 255, 255, 0.051) -10.44%, rgba(255, 255, 255, 0.1) 32.27%, rgba(255, 255, 255, 0) 34.06%), rgba(255, 151, 32, 0.3);
-    box-shadow: 0px 3px 4px rgba(255, 151, 32, 0.2), inset 0px -0.4px 0.236028px rgba(255, 151, 32, 0.2), inset 0px -0.5px 0.590071px rgba(255, 255, 255, 0.3), inset 0px -1px 0px rgba(255, 151, 32, 0.3), inset 0px 1px 0px #FF9720;
-    backdrop-filter: blur(1.72839px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 12px;
+.collapse {
+  display: none;
 }
 
-.yellow {
-    padding: 10px;
-    position: absolute;
-    width: 335px;
-    height: auto;
-    left: 29px;
-    top: 475px;
-    font-size: 20px;
-    position: absolute;
-    color: #FFCB05;
-    border-color: transparent;
-
-    background: linear-gradient(122.06deg, rgba(255, 255, 255, 0.051) -10.44%, rgba(255, 255, 255, 0.1) 32.27%, rgba(255, 255, 255, 0) 34.06%), rgba(255, 203, 5, 0.3);
-    box-shadow: 0px 3px 4px rgba(255, 203, 5, 0.2), inset 0px -0.4px 0.236028px rgba(255, 203, 5, 0.2), inset 0px -0.5px 0.590071px rgba(255, 255, 255, 0.3), inset 0px -1px 0px rgba(255, 203, 5, 0.3), inset 0px 1px 0px #FFCB05;
-    backdrop-filter: blur(1.72839px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 12px;
+nav .showHeader {
+  display: none;
 }
 
-.public {
-    padding: 10px;
-    position: absolute;
-    width: 335px;
-    height: auto;
-    left: 29px;
-    top: 575px;
-    font-size: 20px;
-    position: absolute;
-    color: #29C749;
-    border-color: transparent;
-
-    background: linear-gradient(122.06deg, rgba(255, 255, 255, 0.051) -10.44%, rgba(255, 255, 255, 0.1) 32.27%, rgba(255, 255, 255, 0) 34.06%), rgba(41, 199, 73, 0.3);
-    box-shadow: 0px 3px 4px rgba(41, 199, 73, 0.2), inset 0px -0.4px 0.236028px rgba(41, 199, 73, 0.2), inset 0px -0.5px 0.590071px rgba(255, 255, 255, 0.3), inset 0px -1px 0px rgba(41, 199, 73, 0.3), inset 0px 1px 0px #29C749;
-    backdrop-filter: blur(1.72839px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 12px;
+.navbar-toggler {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
 }
 
-.street {
-    padding: 10px;
-    position: absolute;
-    width: 335px;
-    height: auto;
-    left: 29px;
-    top: 675px;
-    font-size: 20px;
-    position: absolute;
-    color: #BC41C7;
-    border-color: transparent;
-
-    background: linear-gradient(122.06deg, rgba(255, 255, 255, 0.051) -10.44%, rgba(255, 255, 255, 0.1) 32.27%, rgba(255, 255, 255, 0) 34.06%), rgba(188, 65, 199, 0.3);
-    box-shadow: 0px 3px 4px rgba(188, 65, 199, 0.2), inset 0px -0.4px 0.236028px rgba(188, 65, 199, 0.2), inset 0px -0.5px 0.590071px rgba(255, 255, 255, 0.3), inset 0px -1px 0px rgba(188, 65, 199, 0.3), inset 0px 1px 0px #BC41C7;
-    backdrop-filter: blur(1.72839px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 12px;
+.navbar-toggler .navbar-toggler-icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background-color: #FFCB05;
+  transition: all 0.3s ease-in-out;
 }
+
+.title {
+  display: inline-block;
+  color: #FFCB05;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.navbar-toggler .navbar-toggler-icon .bar1 {
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #FFCB05;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler .navbar-toggler-icon .bar2 {
+  width: 100%;
+  height: 2px;
+  background-color: #FFCB05;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler .navbar-toggler-icon .bar3 {
+  position: absolute;
+  bottom: -6px;
+  right: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #FFCB05;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler.open .navbar-toggler-icon .bar1 {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.navbar-toggler.open .navbar-toggler-icon .bar2 {
+  opacity: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon .bar3 {
+  transform: rotate(-45deg) translate(4.5px, -4.5px);
+}
+
+.nav-item.active .nav-link {
+  color: #FFCB05;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Style for the links on hover */
+.nav-link:hover {
+  color: #FFCB05;
+}
+
+.container-for-map {
+  display: inline-block;
+  margin: 3vh 5vw;
+  width: 90vw;
+  height: 50vh;
+  background-color: antiquewhite;
+}
+
+button {
+  padding: 12px 30px;
+  width: 170px;
+  height: 44px;
+  color: #FFCB05;
+  background: #00274C;
+  border-radius: 20px;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 13px;
+}
+
+
+/* This is the style for destop mode */
+@media (min-width: 768px) {
+    .navbar-title {
+      display: none;
+    }
+    .collapse{
+      display: contents;
+    }
+
+    button {
+      width: 42.5vw;
+      height: 50px;
+      border-radius: 40px;
+      font-size:large;
+      font-weight: 600;
+    }
+
+    .buttons {
+      gap: 5vw;
+    }
+    .navbar-collapse ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-top: 20px;
+    }
+    .container-for-map {
+      height: 70vh;
+    }
+  }
+  
