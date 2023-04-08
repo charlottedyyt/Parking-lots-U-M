@@ -200,12 +200,20 @@ nav a {
   color: #FFCB05;
 }
 
-.container-for-map {
-  display: inline-block;
-  margin: 3vh 5vw;
-  width: 90vw;
-  height: 50vh;
-  background-color: antiquewhite;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  /* max-height: 100%; */
+}
+
+.changeMode:hover{
+  background: #0058aa;  
+}
+
+.download:hover{
+  background: #0058aa;  
 }
 
 button {
