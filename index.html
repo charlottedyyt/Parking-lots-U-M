@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Parking around central campus</title>	
- <script src="./js/script.js" defer></script>
-</head>	
+  <title>About - Find Parking UM</title>
+  <script src="./js/script.js" defer></script>
+</head>
 
-<body>	
-  <main>	
-      <header>
-        <nav>
-          <div class="navbar-title">
-            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-              </span>
-              
-            </button>
-            <h2 class="title">About</h2>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="all.html">All Parkings</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="student.html">Student Parkings</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="public.html">Public Parkings</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+<body>
+  <main>
+    <header>
+      <nav>
+        <div class="navbar-title">
+          <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </span>
+
+          </button>
+          <h2 class="title">About</h2>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="all.html">All Parking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="student.html">Student Parking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="public.html">Public Parking</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <div class="container-for-map"></div>
-    <div class="buttons">
-      <button class="changeMode">Satellite Mode</button>
-      <button class="download">Download</button>
+
+    <h2>About Find Parking UM</h2>
+    <p>Find Parking UM is a website that provides information on the location and details of the University of
+      Michigan's permit parking lots and public parking facilities. Our project aims to create a convenient and
+      user-friendly experience for drivers who struggle with finding available parking spots. Our website features a
+      series of maps that display the location of all parking opportunities, public and school.</p>
+<!-- 
+    <p>Our application allows drivers to quickly find available parking spots without the need to search for parking in
+      person. Users can easily locate school permit parking lots and public parking facilities with just a few clicks.
+      The application can also show different types of parking spots according to the user’s needs, making it easier for
+      students and faculty who may only be eligible for partial school's permit parking lots.</p> -->
+    <h3>Checkout the maps:</h3>
+    <div class="indexButtonsContainer"> 
+      <button class="indexButtons" onclick="window.location.href='all.html';">
+        All Parking
+      </button>
+      <button class="indexButtons" onclick="window.location.href='student.html';">
+        Student Parking
+      </button>
+      <button class="indexButtons" onclick="window.location.href='public.html';">
+        Public Parking
+      </button>
     </div>
-  </main>	
-</body>	
+
+
+  </main>
+</body>
+
 </html>
